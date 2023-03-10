@@ -7,11 +7,11 @@ export const ThemeContext = createContext({
 
 export const ThemeProvider = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useState(
-    localStorage.getItem('isDarkMode') === 'true' // Inicializar el estado del isDarkMode a partir del valor almacenado en localStorage
+    localStorage.getItem('isDarkMode') === 'true'
   );
 
   useEffect(() => {
-    localStorage.setItem('isDarkMode', isDarkMode); // Almacenar la preferencia del usuario cada vez que cambie el modo oscuro
+    localStorage.setItem('isDarkMode', isDarkMode);
   }, [isDarkMode]);
 
   const toggleTheme = () => {

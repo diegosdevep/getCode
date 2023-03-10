@@ -1,9 +1,10 @@
-import React from 'react';
-import Switch from '../../components/navbar/Switch';
+import Switch from '../../components/navbar/Switch/Switch';
+import styles from './navbar.module.css';
 
 const Navbar = () => {
   return (
-    <div>
+    <div className={styles.container}>
+      <h1>Logo</h1>
       <Switch />
     </div>
   );
