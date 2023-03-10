@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from '../../../context/ThemeContext';
-import styles from './styles.module.css';
+import styles from './switch.module.css';
 
 const Switch = () => {
   const { isDarkMode, toggleTheme } = useContext(ThemeContext);
   return (
-    <div>
+    <div className={styles.container}>
       <input
         type='checkbox'
         checked={isDarkMode}

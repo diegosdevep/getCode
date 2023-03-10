@@ -1,25 +1,8 @@
 /* styles.module.css */
-
-.light {
-  --background-color: #1a1d20;
-  --text-color: #f1f5f7;
-  --primary-color: #f05711;
-}
-
-.dark {
-  --background-color: #eff3f5;
-  --text-color: #1a1d20;
-  --primary-color: #f05711;
-}
-
 .container {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  padding: 20px;
-  min-height: 100vh;
-}
-.text {
-  color: var(--text--color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .switchLabel {
